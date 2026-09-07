@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Jules Owen</title>
+<style>
+  body{
+    font-family: Georgia, 'Times New Roman', serif;
+    color:#000;
+    background:#fff;
+    max-width:800px;
+    margin:80px auto;
+    padding:0 30px;
+    line-height:1.7;
+    font-size:20px;
+    text-align:center;
+  }
+  p{
+    margin:0 0 20px 0;
+  }
+  a{
+    color:#000;
+  }
+  .back-link{
+    display:block;
+    text-align:left;
+    font-size:15px;
+    color:#555;
+    margin-bottom:40px;
+    text-decoration:none;
+  }
+  form{
+    max-width:400px;
+    margin:0 auto;
+    text-align:left;
+  }
+  label{
+    display:block;
+    font-size:16px;
+    color:#555;
+    margin-bottom:4px;
+  }
+  input[type=text], input[type=email], textarea{
+    width:100%;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size:17px;
+    padding:8px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+  }
+  textarea{
+    min-height:100px;
+    resize:vertical;
+  }
+  .contact-btn{
+    display:inline-block;
+    margin-top:8px;
+    padding:12px 24px;
+    border:1px solid #000;
+    color:#000;
+    background:none;
+    cursor:pointer;
+    text-decoration:none;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size:18px;
+  }
+</style>
+</head>
+<body>
+
+<a class="back-link" href="index.html">&larr; Back</a>
+
+<p>Please share a few details, and I will be in touch.</p>
+
+<form action="https://formsubmit.co/jules.owen@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="New message from julesowen.com">
+  <input type="hidden" name="_captcha" value="false">
+
+  <label for="name">Name</label>
+  <input type="text" id="name" name="Name" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="Email" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="Message" required></textarea>
+
+  <button type="submit" class="contact-btn">Send</button>
+</form>
+
+</body>
+</html>
